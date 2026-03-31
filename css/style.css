@@ -59,10 +59,11 @@ nav {
 }
 
 main section{
-    display:  flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: 0 20px;
 }
 
 .botao {
@@ -101,27 +102,37 @@ p {
 }
 
 .produto {
-    display: block;
-    width: 792px;
-    height: 446px;
+    width: 100%;
+    max-width: 792px; 
+    height: auto;
     margin: 0 auto;
+    display: block;
 }
 
 @media(max-width: 768px){
     p {
-        width: 648px;
+        width: 90%;
+        max-width: 648px;
     }
 }
 
 @media(max-width: 375px) {
+
+   main section{
+    display:  flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
     .titulo {
         font-size: 40px;
+        padding: 0 20px;
     }
 
     p {
-        font-size: 16px;
-        margin: 24px 17px 0 17px;
-        width: 341px;
+        max-width: 341px;
     }
 
     header {
@@ -130,13 +141,20 @@ p {
     }
 
     .produto {
-        width: 341px;
-        height: 230px;
+            width: 100%;
+    max-width: 792px; 
+    height: auto;
+    margin: 0 auto;
+    display: block;
     }
 
-    .botao{
-        width: 251px;
+        .botao {
+        width: 90%; 
+        max-width: 251px; 
         height: 66px;
         font-size: 20px;
+        margin: 40px auto; 
+        display: block; 
+        text-align: center; 
     }
 }
